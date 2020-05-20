@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I7u-3R-D6g">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -7,21 +7,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--camera-->
+        <!--ScannerViewController-->
         <scene sceneID="6wg-73-aiK">
             <objects>
-                <viewController id="w8h-j6-oLc" sceneMemberID="viewController">
+                <viewController title="ScannerViewController" id="w8h-j6-oLc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KBp-bc-7RB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tap the &quot;Scan a Book&quot; button below when you're ready to begin." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2ms-Ya-DQR">
                                 <rect key="frame" x="40" y="144" width="334" height="234"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="234" id="c0C-FE-q1Z"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.85049344993005183" green="0.48293866534592622" blue="0.35947332399816317" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -37,7 +36,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.77654102402673642" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2ms-Ya-DQR" firstAttribute="leading" secondItem="tz3-4T-bFv" secondAttribute="leading" constant="40" id="CLK-Wh-9vF"/>
                             <constraint firstItem="fhe-H3-DJF" firstAttribute="centerX" secondItem="KBp-bc-7RB" secondAttribute="centerX" id="DV3-DA-I6t"/>
@@ -47,7 +46,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tz3-4T-bFv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="camera" image="camera" landscapeImage="camera" largeContentSizeImage="camera" selectedImage="camera-filled" id="fg3-KL-sa2"/>
+                    <tabBarItem key="tabBarItem" title="Scanner" image="camera" landscapeImage="camera" largeContentSizeImage="camera" selectedImage="camera-filled" id="fg3-KL-sa2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S90-E9-5RR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="134" y="26"/>
         </scene>
-        <!--Books History-->
+        <!--BooksListViewController-->
         <scene sceneID="Bet-nq-qDK">
             <objects>
-                <tableViewController id="z0D-H3-39f" sceneMemberID="viewController">
+                <tableViewController title="BooksListViewController" id="z0D-H3-39f" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qwn-K0-QIX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
