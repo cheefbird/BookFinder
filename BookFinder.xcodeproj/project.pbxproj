@@ -79,13 +79,9 @@
 		259BBE4A2474CA2A00B4B4E5 /* BookFinder */ = {
 			isa = PBXGroup;
 			children = (
-				259BBE4B2474CA2A00B4B4E5 /* AppDelegate.swift */,
-				259BBE4D2474CA2A00B4B4E5 /* SceneDelegate.swift */,
-				259BBE4F2474CA2A00B4B4E5 /* ViewController.swift */,
-				259BBE512474CA2A00B4B4E5 /* Main.storyboard */,
-				259BBE542474CA2B00B4B4E5 /* Assets.xcassets */,
-				259BBE562474CA2B00B4B4E5 /* LaunchScreen.storyboard */,
 				259BBE592474CA2B00B4B4E5 /* Info.plist */,
+				259BBE6D2474CBE900B4B4E5 /* App */,
+				259BBE6E2474CBF700B4B4E5 /* UI */,
 			);
 			path = BookFinder;
 			sourceTree = "<group>";
@@ -97,6 +93,34 @@
 				259BBE642474CA2B00B4B4E5 /* Info.plist */,
 			);
 			path = BookFinderTests;
+			sourceTree = "<group>";
+		};
+		259BBE6D2474CBE900B4B4E5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				259BBE4B2474CA2A00B4B4E5 /* AppDelegate.swift */,
+				259BBE4D2474CA2A00B4B4E5 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		259BBE6E2474CBF700B4B4E5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				259BBE6F2474CC0C00B4B4E5 /* ViewController */,
+				259BBE512474CA2A00B4B4E5 /* Main.storyboard */,
+				259BBE562474CA2B00B4B4E5 /* LaunchScreen.storyboard */,
+				259BBE542474CA2B00B4B4E5 /* Assets.xcassets */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		259BBE6F2474CC0C00B4B4E5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				259BBE4F2474CA2A00B4B4E5 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
